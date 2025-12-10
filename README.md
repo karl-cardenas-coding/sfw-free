@@ -75,6 +75,12 @@ chmod +x sfw
 sudo mv sfw /usr/local/bin/
 ```
 
+Note: if you're using sfw within an Alpine docker image on Apple Silicon (or other arm64) you'll need to install a couple of libraries for sfw to work correctly:
+
+```bash
+apk add --no-cache libstdc++ libgcc
+```
+
 #### Windows
 
 ```PowerShell
